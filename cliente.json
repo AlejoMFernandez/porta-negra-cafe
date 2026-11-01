@@ -1,0 +1,883 @@
+{
+ "$schema": "https://raw.githubusercontent.com/AlejoMFernandez/kit-demos/main/docs/cliente.schema.json",
+ "id": "porta-negra-cafe",
+ "nombre": "Porta Negra Café",
+ "pais": "AR",
+ "idioma": "es",
+ "modo": "demo",
+ "demoVersion": 1,
+ "whatsapp": "",
+ "instagram": "portanegracafe",
+ "prefijoPedido": "PN",
+ "supabase": {
+  "url": "",
+  "anonKey": ""
+ },
+ "marca": {
+  "logo": "img/marca/logo-claro.svg",
+  "logoPanel": "img/marca/logo-oscuro.svg",
+  "logoClaro": "img/marca/logo-claro.svg",
+  "isotipo": "img/marca/isotipo-oscuro.svg",
+  "favicon": "img/marca/favicon.svg",
+  "colores": {
+   "fondo": "#0D0D0D",
+   "superficie": "#1A1714",
+   "texto": "#EFE9DF",
+   "primario": "#C98A3A",
+   "sobrePrimario": "#0D0D0D",
+   "acento": "#C98A3A",
+   "sobreAcento": "#0D0D0D",
+   "borde": "#3A332C",
+   "suave": "#A89F92",
+   "ok": "#7BC47F"
+  },
+  "fuentes": {
+   "titulos": "'Spectral', Georgia, serif",
+   "texto": "'Questrial', system-ui, sans-serif",
+   "googleFonts": ""
+  },
+  "estilo": {
+   "forma": "recta",
+   "sombra": "suave",
+   "borde": "1px",
+   "mayusculas": false
+  }
+ },
+ "modulos": {
+  "carta": true,
+  "carrito": true,
+  "reservas": false,
+  "admin": true,
+  "cartaQR": true
+ },
+ "horarios": {
+  "lun": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "mar": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "mie": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "jue": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "vie": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "sab": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "dom": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ]
+ },
+ "sucursales": [
+  {
+   "id": "urquiza",
+   "nombre": "Villa Urquiza",
+   "direccion": "Mendoza 5242",
+   "barrio": "Villa Urquiza",
+   "whatsapp": "",
+   "mapa": "https://maps.google.com/?q=Mendoza+5242,+CABA",
+   "horarios": {
+    "lun": [
+     [
+      "08:00",
+      "20:00"
+     ]
+    ],
+    "mar": [
+     [
+      "08:00",
+      "20:00"
+     ]
+    ],
+    "mie": [
+     [
+      "08:00",
+      "20:00"
+     ]
+    ],
+    "jue": [
+     [
+      "08:00",
+      "20:00"
+     ]
+    ],
+    "vie": [
+     [
+      "08:00",
+      "20:00"
+     ]
+    ],
+    "sab": [
+     [
+      "09:00",
+      "20:00"
+     ]
+    ],
+    "dom": [
+     [
+      "09:00",
+      "20:00"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "saavedra",
+   "nombre": "Saavedra",
+   "direccion": "Crisólogo Larralde 4679",
+   "barrio": "Saavedra",
+   "whatsapp": "",
+   "mapa": "https://maps.google.com/?q=Crisologo+Larralde+4679,+CABA"
+  }
+ ],
+ "pedidos": {
+  "salidas": [
+   "whatsapp",
+   "efectivo"
+  ],
+  "tipos": [
+   "retiro"
+  ],
+  "envio": 0,
+  "minimo": 0,
+  "encargo": {
+   "anticipacionHoras": 24,
+   "diasAdelante": 14,
+   "franjas": [
+    {
+     "id": "manana",
+     "nombre": "Mañana",
+     "desde": "09:00",
+     "hasta": "12:00"
+    },
+    {
+     "id": "tarde",
+     "nombre": "Tarde",
+     "desde": "15:00",
+     "hasta": "19:00"
+    }
+   ]
+  }
+ },
+ "pagos": {
+  "efectivo": {
+   "porDia": {
+    "lun": 10,
+    "mar": 10,
+    "mie": 10,
+    "jue": 10,
+    "vie": 10,
+    "sab": 10,
+    "dom": 10
+   }
+  }
+ },
+ "destacados": [
+  {
+   "id": "grano",
+   "nombre": "Grano del mes",
+   "ayuda": "El café en grano que hay hoy en las dos Portas.",
+   "campos": [
+    {
+     "id": "origen",
+     "label": "Origen"
+    },
+    {
+     "id": "notas",
+     "label": "Notas de sabor",
+     "largo": true
+    }
+   ],
+   "valores": {
+    "origen": "Bolivia",
+    "notas": ""
+   }
+  },
+  {
+   "id": "yoga",
+   "nombre": "Agenda · Rooftop yoga",
+   "campos": [
+    {
+     "id": "cuando",
+     "label": "Días y hora"
+    },
+    {
+     "id": "detalle",
+     "label": "Detalle",
+     "largo": true
+    }
+   ],
+   "valores": {
+    "cuando": "Martes, jueves y sábados · 9:15 hs",
+    "detalle": "Con Pame de Fluir en Movimiento, en la terraza de Saavedra. Cupos limitados: traé tu mat."
+   }
+  },
+  {
+   "id": "club",
+   "nombre": "Agenda · Coffee Club",
+   "campos": [
+    {
+     "id": "cuando",
+     "label": "Fecha y hora"
+    },
+    {
+     "id": "detalle",
+     "label": "Detalle",
+     "largo": true
+    }
+   ],
+   "valores": {
+    "cuando": "Sábado [fecha a confirmar] · 16:00 hs",
+    "detalle": "Con Powerhouse: café, charlas, buena música y DJ en vivo."
+   }
+  },
+  {
+   "id": "copa",
+   "nombre": "Agenda · Alma & Copa",
+   "campos": [
+    {
+     "id": "cuando",
+     "label": "Fecha y hora"
+    },
+    {
+     "id": "detalle",
+     "label": "Detalle",
+     "largo": true
+    }
+   ],
+   "valores": {
+    "cuando": "[Fecha a confirmar] · 19:00 hs",
+    "detalle": "“La copa y el destino”: vinos boutique, juegos y astrología para bajar el ritmo."
+   }
+  }
+ ],
+ "textos": {
+  "tuPedido": "Tu encargo",
+  "verPedido": "Ver tu encargo",
+  "carritoVacio": "Tu caja está vacía.",
+  "carritoVacioSub": "Arrancá por un alfajor, unas cookies o una bolsa de café.",
+  "agregar": "Encargar",
+  "agregado": "¡A la caja!",
+  "retiro": "Retiro en Porta",
+  "enviarPedido": "Encargar",
+  "sedeRetiro": "¿Por qué puerta lo retirás?",
+  "pedidoListo": "Listo",
+  "pedidoListoSub": "Te esperamos detrás de la puerta negra. Tu código es {codigo}.",
+  "waPedido": "¡Hola Porta Negra! Quiero encargar para retirar:",
+  "seguir": "Seguir mirando",
+  "comoPagas": "¿Cómo pagás?"
+ },
+ "carta": {
+  "categorias": [
+   {
+    "id": "espresso",
+    "nombre": "Café espresso",
+    "orden": 1
+   },
+   {
+    "id": "especiales",
+    "nombre": "Especiales",
+    "orden": 2
+   },
+   {
+    "id": "filtrados",
+    "nombre": "Filtrados",
+    "orden": 3
+   },
+   {
+    "id": "frios",
+    "nombre": "Café frío",
+    "orden": 4
+   },
+   {
+    "id": "te",
+    "nombre": "Té en hebras",
+    "orden": 5
+   },
+   {
+    "id": "alfajores",
+    "nombre": "Alfajores",
+    "orden": 6
+   },
+   {
+    "id": "cookies",
+    "nombre": "Cookies",
+    "orden": 7
+   },
+   {
+    "id": "chipa",
+    "nombre": "Chipa",
+    "orden": 8
+   },
+   {
+    "id": "salado",
+    "nombre": "Salado",
+    "orden": 9
+   },
+   {
+    "id": "pasteleria",
+    "nombre": "Pastelería",
+    "orden": 10
+   },
+   {
+    "id": "promos",
+    "nombre": "Promos con café",
+    "orden": 11
+   },
+   {
+    "id": "bebidas",
+    "nombre": "Bebidas",
+    "orden": 12
+   },
+   {
+    "id": "grano",
+    "nombre": "Café en grano",
+    "orden": 13
+   }
+  ],
+  "productos": [
+   {
+    "id": "espresso-doble-doppio",
+    "categoria": "espresso",
+    "nombre": "Espresso doble / doppio",
+    "precio": 4900,
+    "foto": "img/platos/espresso.webp"
+   },
+   {
+    "id": "macchiato",
+    "categoria": "espresso",
+    "nombre": "Macchiato",
+    "precio": 4900
+   },
+   {
+    "id": "americano",
+    "categoria": "espresso",
+    "nombre": "Americano",
+    "precio": 4900
+   },
+   {
+    "id": "cappuccino",
+    "categoria": "espresso",
+    "nombre": "Cappuccino",
+    "precio": 5500,
+    "foto": "img/platos/cappuccino.webp"
+   },
+   {
+    "id": "flat-white",
+    "categoria": "espresso",
+    "nombre": "Flat white",
+    "precio": 5500
+   },
+   {
+    "id": "magic",
+    "categoria": "espresso",
+    "nombre": "Magic",
+    "precio": 5200
+   },
+   {
+    "id": "latte",
+    "categoria": "espresso",
+    "nombre": "Latte",
+    "precio": 5600,
+    "foto": "img/platos/latte.webp"
+   },
+   {
+    "id": "gibraltar-lagrima",
+    "categoria": "espresso",
+    "nombre": "Gibraltar / lágrima",
+    "precio": 5200
+   },
+   {
+    "id": "latte-vainilla",
+    "categoria": "espresso",
+    "nombre": "Latte vainilla",
+    "precio": 5700
+   },
+   {
+    "id": "cholatada",
+    "categoria": "especiales",
+    "nombre": "Cholatada",
+    "precio": 5200,
+    "descripcion": "Sin café."
+   },
+   {
+    "id": "latte-caramel",
+    "categoria": "especiales",
+    "nombre": "Latte caramel",
+    "precio": 5700,
+    "descripcion": "1 shot de café, caramelo y leche."
+   },
+   {
+    "id": "mocca",
+    "categoria": "especiales",
+    "nombre": "Mocca",
+    "precio": 5700,
+    "descripcion": "2 shots de café, chocolate y leche."
+   },
+   {
+    "id": "mocca-blanco-o-mixto",
+    "categoria": "especiales",
+    "nombre": "Mocca blanco o mixto",
+    "precio": 5700,
+    "descripcion": "2 shots de café, chocolate blanco o negro y leche."
+   },
+   {
+    "id": "matcha-latte",
+    "categoria": "especiales",
+    "nombre": "Matcha latte",
+    "precio": 6900
+   },
+   {
+    "id": "aeropress",
+    "categoria": "filtrados",
+    "nombre": "Aeropress",
+    "precio": 6600
+   },
+   {
+    "id": "v60",
+    "categoria": "filtrados",
+    "nombre": "V60",
+    "precio": 6600,
+    "foto": "img/platos/filtrado.webp"
+   },
+   {
+    "id": "chemex",
+    "categoria": "filtrados",
+    "nombre": "Chemex",
+    "precio": 6600
+   },
+   {
+    "id": "prensa-francesa",
+    "categoria": "filtrados",
+    "nombre": "Prensa francesa",
+    "precio": 6600
+   },
+   {
+    "id": "syphon",
+    "categoria": "filtrados",
+    "nombre": "Syphon",
+    "precio": 6600
+   },
+   {
+    "id": "coffee-tonic",
+    "categoria": "frios",
+    "nombre": "Coffee tonic",
+    "precio": 6300,
+    "descripcion": "2 shots de café y tónica."
+   },
+   {
+    "id": "iced-flat",
+    "categoria": "frios",
+    "nombre": "Iced flat",
+    "precio": 5700,
+    "descripcion": "2 shots de café y leche."
+   },
+   {
+    "id": "iced-latte",
+    "categoria": "frios",
+    "nombre": "Iced latte",
+    "precio": 5700,
+    "descripcion": "1 shot de café y leche."
+   },
+   {
+    "id": "iced-caramel",
+    "categoria": "frios",
+    "nombre": "Iced caramel",
+    "precio": 5800,
+    "descripcion": "1 shot de café, caramelo y leche."
+   },
+   {
+    "id": "passion-coffee",
+    "categoria": "frios",
+    "nombre": "Passion coffee",
+    "precio": 6000,
+    "descripcion": "2 shots de café, syrup de frutilla, syrup de maracuyá y tónica."
+   },
+   {
+    "id": "iced-mocca",
+    "categoria": "frios",
+    "nombre": "Iced mocca",
+    "precio": 5800,
+    "descripcion": "2 shots de café, chocolate y leche."
+   },
+   {
+    "id": "barrancho",
+    "categoria": "frios",
+    "nombre": "Barrancho",
+    "precio": 6300,
+    "descripcion": "2 shots de café, syrup de maracuyá, syrup de naranja y tónica."
+   },
+   {
+    "id": "afternoon-grey",
+    "categoria": "te",
+    "nombre": "Afternoon grey",
+    "precio": 7200,
+    "descripcion": "Té negro Darjeeling, flores de azahar, caléndula, clavo de olor y bergamota."
+   },
+   {
+    "id": "five-oclock",
+    "categoria": "te",
+    "nombre": "Five o’clock",
+    "precio": 7200,
+    "descripcion": "Té blanco Pai Mu Tan, hibisco, manzana, naranja, rosa mosqueta, arándano, frutilla y cereza."
+   },
+   {
+    "id": "cha-tropic",
+    "categoria": "te",
+    "nombre": "Chá tropic",
+    "precio": 7200,
+    "descripcion": "Té verde Sencha, té blanco Pai Mu Tan, coco, jazmín, rosa y maracuyá."
+   },
+   {
+    "id": "green-day",
+    "categoria": "te",
+    "nombre": "Green day",
+    "precio": 7200,
+    "descripcion": "Té verde Sencha, menta, jengibre, lemongrass, caléndula, miel y limón."
+   },
+   {
+    "id": "morning-tea",
+    "categoria": "te",
+    "nombre": "Morning tea",
+    "precio": 7200,
+    "descripcion": "Té negro Ceylán, jengibre, canela, anís, cacao, pimienta negra, clavo de olor, cardamomo, caramelo y chocolate."
+   },
+   {
+    "id": "night-tea",
+    "categoria": "te",
+    "nombre": "Night tea",
+    "precio": 7200,
+    "descripcion": "Té rooibos, cedrón, manzanilla, rosa y vainilla."
+   },
+   {
+    "id": "chipa",
+    "categoria": "chipa",
+    "nombre": "Chipa",
+    "precio": 4600,
+    "foto": "img/platos/chipa.webp"
+   },
+   {
+    "id": "chipa-de-membrillo",
+    "categoria": "chipa",
+    "nombre": "Chipa de membrillo",
+    "precio": 5700
+   },
+   {
+    "id": "chipa-de-queso-azul",
+    "categoria": "chipa",
+    "nombre": "Chipa de queso azul",
+    "precio": 5700
+   },
+   {
+    "id": "chipanguich",
+    "categoria": "chipa",
+    "nombre": "Chipanguich",
+    "precio": 8300,
+    "foto": "img/platos/chipa-mano.webp"
+   },
+   {
+    "id": "medialuna-de-jamon-y-queso",
+    "categoria": "salado",
+    "nombre": "Medialuna de jamón y queso",
+    "precio": 5000,
+    "foto": "img/platos/croissant-jyq.webp"
+   },
+   {
+    "id": "tostado-de-jamon-y-queso",
+    "categoria": "salado",
+    "nombre": "Tostado de jamón y queso",
+    "precio": 7900
+   },
+   {
+    "id": "alfacookie",
+    "categoria": "alfajores",
+    "nombre": "Alfacookie",
+    "precio": 6600
+   },
+   {
+    "id": "alfajor-ganache-de-choco-blanco",
+    "categoria": "alfajores",
+    "nombre": "Alfajor ganache de choco blanco",
+    "precio": 6600,
+    "descripcion": "Pistacho, limón y frutos rojos."
+   },
+   {
+    "id": "alfajor-vegano-de-almendras",
+    "categoria": "alfajores",
+    "nombre": "Alfajor vegano de almendras",
+    "precio": 6600
+   },
+   {
+    "id": "alfajor-choco-blanco-mani-y-frambuesa",
+    "categoria": "alfajores",
+    "nombre": "Alfajor choco blanco, maní y frambuesa",
+    "precio": 7300
+   },
+   {
+    "id": "alfajor-choco-semi-amargo-y-pistacho",
+    "categoria": "alfajores",
+    "nombre": "Alfajor choco semi-amargo y pistacho",
+    "precio": 7300,
+    "descripcion": "Con mousse de chocolate.",
+    "foto": "img/platos/alfajores.webp"
+   },
+   {
+    "id": "alfajor-de-coco-y-dulce-de-leche",
+    "categoria": "alfajores",
+    "nombre": "Alfajor de coco y dulce de leche",
+    "precio": 6600
+   },
+   {
+    "id": "cookie-apple-crumble",
+    "categoria": "cookies",
+    "nombre": "Cookie apple crumble",
+    "precio": 5700
+   },
+   {
+    "id": "cookie-caramelo-salado",
+    "categoria": "cookies",
+    "nombre": "Cookie caramelo salado",
+    "precio": 5700,
+    "descripcion": "Manteca de maní y chocolate."
+   },
+   {
+    "id": "cookie-citrone",
+    "categoria": "cookies",
+    "nombre": "Cookie citrone",
+    "precio": 6000
+   },
+   {
+    "id": "cookie-kit-kat",
+    "categoria": "cookies",
+    "nombre": "Cookie Kit-Kat",
+    "precio": 6000
+   },
+   {
+    "id": "cookie-frambuesa-y-choco-blanco",
+    "categoria": "cookies",
+    "nombre": "Cookie frambuesa y choco blanco",
+    "precio": 5300,
+    "descripcion": "Con limón."
+   },
+   {
+    "id": "cookie-ganache-de-choco-blanco",
+    "categoria": "cookies",
+    "nombre": "Cookie ganache de choco blanco",
+    "precio": 5300,
+    "descripcion": "Pistacho y frutos rojos."
+   },
+   {
+    "id": "cookie-nutella-y-chocolate",
+    "categoria": "cookies",
+    "nombre": "Cookie Nutella y chocolate",
+    "precio": 6600
+   },
+   {
+    "id": "cookie-naranja-y-choco-semi-amargo",
+    "categoria": "cookies",
+    "nombre": "Cookie naranja y choco semi-amargo",
+    "precio": 5300,
+    "descripcion": "Con cajú. Sin TACC."
+   },
+   {
+    "id": "cookie-red-velvet",
+    "categoria": "cookies",
+    "nombre": "Cookie red velvet",
+    "precio": 5300,
+    "foto": "img/platos/cookies.webp"
+   },
+   {
+    "id": "cookie-pepa-de-algarroba",
+    "categoria": "cookies",
+    "nombre": "Cookie pepa de algarroba",
+    "precio": 6000
+   },
+   {
+    "id": "cookie-ganache-de-choco-negro-y-mani",
+    "categoria": "cookies",
+    "nombre": "Cookie ganache de choco negro y maní",
+    "precio": 5300
+   },
+   {
+    "id": "cookie-choco-negro-choco-blanco-mani-y-p",
+    "categoria": "cookies",
+    "nombre": "Cookie choco negro, choco blanco, maní y pistacho",
+    "precio": 6000
+   },
+   {
+    "id": "rolls-de-canela",
+    "categoria": "pasteleria",
+    "nombre": "Rolls de canela",
+    "precio": 5100
+   },
+   {
+    "id": "torta-del-dia",
+    "categoria": "pasteleria",
+    "nombre": "Torta del día",
+    "precio": 9300
+   },
+   {
+    "id": "budin",
+    "categoria": "pasteleria",
+    "nombre": "Budín",
+    "precio": 5300,
+    "descripcion": "Consultá los sabores del día."
+   },
+   {
+    "id": "croissant",
+    "categoria": "pasteleria",
+    "nombre": "Croissant",
+    "precio": 3200,
+    "foto": "img/platos/medialuna-mesa.webp"
+   },
+   {
+    "id": "croissant-relleno",
+    "categoria": "pasteleria",
+    "nombre": "Croissant relleno",
+    "precio": 5300
+   },
+   {
+    "id": "medialuna-de-manteca",
+    "categoria": "pasteleria",
+    "nombre": "Medialuna de manteca",
+    "precio": 2200
+   },
+   {
+    "id": "scon-de-queso",
+    "categoria": "pasteleria",
+    "nombre": "Scon de queso",
+    "precio": 4500
+   },
+   {
+    "id": "barra-de-cereal",
+    "categoria": "pasteleria",
+    "nombre": "Barra de cereal",
+    "precio": 5000
+   },
+   {
+    "id": "cafe-alfacookie",
+    "categoria": "promos",
+    "nombre": "Café + alfacookie",
+    "precio": 11500
+   },
+   {
+    "id": "cafe-2-medialunas",
+    "categoria": "promos",
+    "nombre": "Café + 2 medialunas",
+    "precio": 8200
+   },
+   {
+    "id": "cafe-budin",
+    "categoria": "promos",
+    "nombre": "Café + budín",
+    "precio": 10300
+   },
+   {
+    "id": "cafe-chipa",
+    "categoria": "promos",
+    "nombre": "Café + chipa",
+    "precio": 9700
+   },
+   {
+    "id": "cafe-chipanguich",
+    "categoria": "promos",
+    "nombre": "Café + chipanguich",
+    "precio": 13100
+   },
+   {
+    "id": "cafe-croissant-simple",
+    "categoria": "promos",
+    "nombre": "Café + croissant simple",
+    "precio": 8300
+   },
+   {
+    "id": "cafe-torta",
+    "categoria": "promos",
+    "nombre": "Café + torta",
+    "precio": 14100
+   },
+   {
+    "id": "cafe-tostado-de-jamon-y-queso",
+    "categoria": "promos",
+    "nombre": "Café + tostado de jamón y queso",
+    "precio": 12700
+   },
+   {
+    "id": "agua-sin-gas",
+    "categoria": "bebidas",
+    "nombre": "Agua sin gas",
+    "precio": 3300
+   },
+   {
+    "id": "soda",
+    "categoria": "bebidas",
+    "nombre": "Soda",
+    "precio": 3300
+   },
+   {
+    "id": "kanawa-frutal-500-ml",
+    "categoria": "bebidas",
+    "nombre": "Kanawa frutal 500 ml",
+    "precio": 5200,
+    "descripcion": "Consultá el sabor.",
+    "foto": "img/platos/kanawa.webp"
+   },
+   {
+    "id": "smoothie-frutal",
+    "categoria": "bebidas",
+    "nombre": "Smoothie frutal",
+    "precio": 6700
+   },
+   {
+    "id": "cafe-grano",
+    "categoria": "grano",
+    "nombre": "Café en grano · 250 g",
+    "precio": 22700,
+    "descripcion": "Tostado por nosotros. En grano o molido.",
+    "foto": "img/platos/grano.webp",
+    "opciones": [
+     {
+      "id": "molienda",
+      "nombre": "Molienda",
+      "valores": [
+       {
+        "id": "grano",
+        "nombre": "En grano"
+       },
+       {
+        "id": "molido",
+        "nombre": "Molido"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Porta Negra Café · Café de especialidad en Villa Urquiza y Saavedra</title>
+<meta property="og:image" content="https://porta-negra-cafe.vercel.app/img/og.jpg?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Logo de Porta Negra Café con la frase Dos puertas, el mismo café">
+<meta property="og:title" content="Porta Negra Café · Café de especialidad">
+<meta property="og:description" content="Dos sucursales, la carta al día y encargos de alfajores, cookies y café para retirar.">
+<meta property="og:url" content="https://porta-negra-cafe.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Porta Negra Café">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://porta-negra-cafe.vercel.app/img/og.jpg?v=1">
+<meta name="description" content="Café de especialidad tostado por nosotros en Mendoza 5242 (Villa Urquiza) y Crisólogo Larralde 4679 (Saavedra). Carta, horarios de cada sucursal, encargos de alfajores, cookies, chipa y café en grano, y la agenda de eventos.">
+<meta name="theme-color" content="#0D0D0D">
+<link rel="icon" href="img/marca/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/Spectral-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Questrial-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero/hero-mob-800.webp" imagesrcset="img/hero/hero-mob-800.webp 800w, img/hero/hero-mob.webp 832w" imagesizes="100vw" media="(max-width: 899px)">
+<link rel="preload" as="image" href="img/hero/hero-puerta-1000.webp" imagesrcset="img/hero/hero-puerta-1000.webp 1000w, img/hero/hero-puerta-1440.webp 1440w" imagesizes="40vw" media="(min-width: 900px)">
+<link rel="stylesheet" href="css/fuentes.css?v=1">
+<link rel="stylesheet" href="kit/kit.css?v=1">
+<link rel="stylesheet" href="css/estilos.css?v=1">
+<script>
+  (function () {
+    var d = document.documentElement; d.classList.add('js');
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('con-intro');
+  })();
+</script>
+</head>
+<body>
+
+<!-- ===== INTRO: la puerta se abre ===== -->
+<div class="intro" aria-hidden="true">
+  <div class="intro__hoja intro__hoja--izq"></div>
+  <div class="intro__hoja intro__hoja--der"></div>
+  <div class="intro__logo">
+    <span class="intro__luz"></span>
+    <img src="img/marca/logo-claro.svg" alt="" width="625" height="771">
+  </div>
+</div>
+
+<a class="saltar" href="#carta">Saltar a la carta</a>
+
+<!-- ===== BARRA SUPERIOR ===== -->
+<header class="barra" data-barra>
+  <a class="barra__logo" href="#inicio" aria-label="Porta Negra Café, inicio">
+    <img src="img/marca/wordmark-claro.svg" alt="Porta Negra café" width="588" height="170">
+  </a>
+  <nav class="barra__nav" aria-label="Secciones">
+    <a href="#carta">Carta</a>
+    <a href="#encargos">Encargos</a>
+    <a href="#sucursales">Sucursales</a>
+    <a href="#agenda">Agenda</a>
+  </nav>
+  <div class="barra__acc">
+    <button type="button" class="btn-encargo" data-kit-open="carrito" data-kit-target aria-label="Ver tu encargo">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="12"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg>
+      <span class="btn-encargo__txt">Tu encargo</span>
+      <span class="btn-encargo__n" data-encargo-n>0</span>
+    </button>
+    <button type="button" class="btn-menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu" data-menu-btn>
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden data-menu>
+  <nav aria-label="Menú">
+    <a href="#carta" style="--d:1">Carta</a>
+    <a href="#encargos" style="--d:2">Encargos</a>
+    <a href="#sucursales" style="--d:3">Sucursales</a>
+    <a href="#agenda" style="--d:4">Agenda</a>
+    <a href="#lugar" style="--d:5">Nuestro lugar</a>
+  </nav>
+  <p class="menu__pie">Mendoza 5242 · Villa Urquiza<br>Crisólogo Larralde 4679 · Saavedra</p>
+</div>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+  <picture class="hero__fondo">
+    <source media="(min-width: 900px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <img src="img/hero/hero-mob-800.webp" srcset="img/hero/hero-mob-800.webp 800w, img/hero/hero-mob.webp 832w" sizes="100vw" alt="Clienta tomando café junto a la pared de ladrillo de Porta Negra" width="800" height="1731" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="hero__inner">
+    <div class="hero__txt">
+      <p class="rotulo hero__rot" style="--d:1">Café de especialidad<span class="solo-ancho"> · Villa Urquiza · Saavedra</span></p>
+      <h1 class="hero__tit">
+        <span class="lin"><span style="--d:2">Detrás de la</span></span>
+        <span class="lin"><span style="--d:3"><em>puerta negra.</em></span></span>
+      </h1>
+      <p class="hero__bajada" style="--d:4">Café tostado por nosotros, filtrados de autor, alfajores, cookies y chipa recién horneada. Dos puertas, el mismo café.</p>
+      <div class="hero__btns" style="--d:5">
+        <a class="btn btn--ambar" href="#carta">Ver la carta</a>
+        <a class="btn btn--linea" href="#encargos"><span>Encargá<span class="corto-oculta"> para retirar</span></span></a>
+      </div>
+      <ul class="hero__sedes" style="--d:6">
+        <li><a href="#sucursales" data-sede-link="urquiza"><span class="punto" data-estado-punto="urquiza"></span><span><b>Urquiza</b> <span class="solo-desk-i">· </span><span data-estado-txt="urquiza">Mendoza 5242</span></span></a></li>
+        <li><a href="#sucursales" data-sede-link="saavedra"><span class="punto"></span><span><b>Saavedra</b> <span class="solo-desk-i">· Larralde 4679</span></span></a></li>
+      </ul>
+    </div>
+    <div class="hero__puerta" aria-hidden="true">
+      <div class="puerta__toldo"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="puerta__marco">
+        <img src="img/hero/hero-puerta-1000.webp" srcset="img/hero/hero-puerta-1000.webp 1000w, img/hero/hero-puerta-1440.webp 1440w" sizes="(min-width: 900px) 40vw, 1px" alt="" width="1000" height="1250" decoding="async">
+      </div>
+      <div class="puerta__lateral"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+  <a class="hero__baja" href="#barra" aria-label="Bajar a la barra"><span></span></a>
+</section>
+
+<!-- ===== LA BARRA ===== -->
+<section class="sec barra-sec" id="barra">
+  <div class="cont">
+    <header class="sec__cab" data-r>
+      <p class="rotulo">La barra</p>
+      <h2 class="tit"><span class="lin"><span>Tostado por nosotros,</span></span> <span class="lin"><span><em>servido como corresponde.</em></span></span></h2>
+    </header>
+    <div class="barra-grid">
+      <div class="metodos" data-r>
+        <p class="sec__txt">Espresso, cafés fríos de autor y cinco métodos de filtrado. Tocá uno y te contamos qué esperar de la taza.</p>
+        <div class="metodos__fila" role="tablist" aria-label="Métodos de filtrado" data-metodos>
+          <button type="button" role="tab" class="metodo is-on" aria-selected="true" data-metodo="0">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path class="liq" d="M24 40h16v10H24z"/><path d="M12 14h40L38 36H26z"/><path d="M20 40h24v12H20z"/><path d="M44 44h4a3 3 0 0 1 0 6h-4"/><path d="M28 36v4M36 36v4"/></svg>
+            <span>V60</span>
+          </button>
+          <button type="button" role="tab" class="metodo" aria-selected="false" data-metodo="1">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path class="liq" d="M24 44l4-8h8l4 8 4 10H20z"/><path d="M18 8h28L36 30l10 24H18l10-24z"/><path d="M27 26h10l-2 8h-6z"/></svg>
+            <span>Chemex</span>
+          </button>
+          <button type="button" role="tab" class="metodo" aria-selected="false" data-metodo="2">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path class="liq" d="M24 50h16v6H24z"/><path d="M22 4h20v8H22z"/><path d="M24 12h16v26H24z"/><path d="M18 38h28v4H18z"/><path d="M22 42h20v14H22z"/></svg>
+            <span>Aeropress</span>
+          </button>
+          <button type="button" role="tab" class="metodo" aria-selected="false" data-metodo="3">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path class="liq" d="M18 34h26v20H18z"/><path d="M16 18h30v38H16z"/><path d="M31 4v14M25 4h12"/><path d="M46 24h4a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4h-4"/><path d="M16 30h30"/></svg>
+            <span>Prensa</span>
+          </button>
+          <button type="button" role="tab" class="metodo" aria-selected="false" data-metodo="4">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path class="liq" d="M24 50a8 8 0 0 0 16 0z"/><circle cx="32" cy="16" r="9"/><path d="M32 25v12"/><circle cx="32" cy="48" r="10"/><path d="M22 58h20M18 4h28"/></svg>
+            <span>Sifón</span>
+          </button>
+        </div>
+        <div class="metodo-det" aria-live="polite">
+          <p class="metodo-det__nom" data-metodo-nom>V60</p>
+          <p class="metodo-det__txt" data-metodo-txt>Filtrado cónico de vertido lento: una taza limpia, brillante, donde se notan las notas del grano.</p>
+          <p class="metodo-det__precio">$6.600 <span>· todos los filtrados</span></p>
+        </div>
+      </div>
+
+      <article class="bolsa" data-r>
+        <div class="bolsa__fotos">
+          <figure class="marco bolsa__foto"><img src="img/platos/grano.webp" alt="Paquete rojo de café en grano de Porta Negra" width="720" height="720" loading="lazy" decoding="async"></figure>
+          <figure class="marco bolsa__tostadora"><img src="img/fotos/tostadora.webp" alt="Tostadora con granos de café" width="480" height="640" loading="lazy" decoding="async"></figure>
+        </div>
+        <div class="bolsa__txt">
+          <p class="rotulo rotulo--rojo">Grano del mes</p>
+          <h3 class="bolsa__tit">Origen <span data-kit-destacado="grano.origen">Bolivia</span></h3>
+          <p class="bolsa__notas" data-grano-notas hidden><span data-kit-destacado="grano.notas"></span></p>
+          <p class="bolsa__desc">250 g de café tostado por nosotros, para llevarte a casa.</p>
+          <div class="bolsa__molienda" role="radiogroup" aria-label="Molienda" data-molienda>
+            <button type="button" role="radio" aria-checked="true" data-mol="grano">En grano</button>
+            <button type="button" role="radio" aria-checked="false" data-mol="molido">Molido</button>
+          </div>
+          <div class="bolsa__pie">
+            <span class="bolsa__precio">$22.700</span>
+            <button type="button" class="btn btn--ambar" data-bolsa-sumar>Encargar la bolsa</button>
+          </div>
+          <p class="bolsa__ok" data-bolsa-ok aria-live="polite"></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CARTA ===== -->
+<section class="sec carta-sec" id="carta">
+  <div class="cont">
+    <header class="sec__cab sec__cab--fila" data-r>
+      <div>
+        <p class="rotulo">Carta · Temporada 2026</p>
+        <h2 class="tit"><span class="lin"><span>Lo que sale</span></span> <span class="lin"><span><em>de la barra.</em></span></span></h2>
+      </div>
+      <div class="carta-extra">
+        <span class="pill-efectivo">10% de descuento en efectivo</span>
+        <a class="link-qr" href="carta/" target="_blank" rel="noopener">La carta del QR <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+    <div class="carta-grid" data-r>
+      <div id="carta-kit" class="carta-kit" data-kit="carta" data-kit-pedir="false"></div>
+      <aside class="carta-foto" aria-hidden="true">
+        <figure class="marco carta-foto__fig"><img src="img/platos/latte.webp" alt="" width="640" height="640" data-carta-foto data-src="img/platos/latte.webp" decoding="async"></figure>
+        <p class="carta-foto__nom" data-carta-foto-nom>Latte</p>
+        <p class="carta-foto__hint">Pasá el mouse por los platos con punto ámbar.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ENCARGOS: ARMÁ TU CAJA ===== -->
+<section class="sec encargos-sec" id="encargos">
+  <div class="cont">
+    <header class="sec__cab sec__cab--fila" data-r>
+      <div>
+        <p class="rotulo">Encargos para retirar</p>
+        <h2 class="tit"><span class="lin"><span>Armá tu</span></span> <span class="lin"><span><em>caja.</em></span></span></h2>
+      </div>
+      <p class="sec__txt">Alfajores de autor, cookies y chipa para pasar a buscar por la Porta que te quede cerca. Encargás con un día de anticipación y pagás al retirar: en efectivo tenés 10% off.</p>
+    </header>
+    <div class="encargos-grid">
+      <div class="mostrador" data-r>
+        <div id="caja-kit" class="caja-kit" data-kit="carta" data-kit-categorias="alfajores,cookies,chipa"></div>
+        <p class="mostrador__hint">En la compu podés arrastrar cada etiqueta a la caja.</p>
+      </div>
+      <aside class="caja" data-caja data-r aria-label="Tu caja">
+        <div class="caja__tapa"><span>Porta Negra</span><span>café</span></div>
+        <ol class="caja__huecos" data-huecos></ol>
+        <div class="caja__pie">
+          <p class="caja__cuenta"><span data-caja-cuenta>Tu caja está vacía</span><b data-caja-total></b></p>
+          <button type="button" class="btn btn--ambar caja__btn" data-caja-encargar disabled>Encargar la caja</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class="caja-barra" data-caja-barra>
+    <p><span data-cb-cuenta>Tu caja · 0</span><b data-cb-total>$0</b></p>
+    <button type="button" class="btn btn--ambar" data-caja-encargar disabled>Encargar la caja</button>
+  </div>
+</section>
+
+<!-- ===== SUCURSALES: DOS PUERTAS ===== -->
+<section class="sec sucursales-sec" id="sucursales">
+  <div class="cont">
+    <header class="sec__cab sec__cab--fila" data-r>
+      <div>
+        <p class="rotulo">Sucursales</p>
+        <h2 class="tit"><span class="lin"><span>Dos puertas,</span></span> <span class="lin"><span><em>elegí la tuya.</em></span></span></h2>
+      </div>
+      <p class="sec__txt">Tocá una puerta: la pizarra te dice si está abierta ahora, con el horario de cada una y cómo llegar.</p>
+    </header>
+    <div class="sedes-grid">
+      <div class="puertas" role="tablist" aria-label="Sucursales" data-r>
+        <button type="button" role="tab" class="puerta is-on" aria-selected="true" aria-controls="sede-urquiza" id="tab-urquiza" data-sede="urquiza">
+          <span class="puerta__dib puerta__dib--urquiza">
+            <span class="puerta__luz"></span>
+            <img src="img/marca/isotipo-claro.svg" alt="" width="625" height="576">
+          </span>
+          <span class="puerta__nom">Villa Urquiza</span>
+          <span class="puerta__dir">Mendoza 5242</span>
+        </button>
+        <button type="button" role="tab" class="puerta" aria-selected="false" aria-controls="sede-saavedra" id="tab-saavedra" data-sede="saavedra">
+          <span class="puerta__dib puerta__dib--saavedra">
+            <svg viewBox="0 0 190 176" aria-hidden="true">
+              <rect x="6" y="4" width="178" height="168"/>
+              <rect class="cubo" x="26" y="22" width="56" height="56"/>
+              <path d="M34 38h40M34 44h40M40 52v20M68 52v20M46 60l16 10M62 60l-16 10"/>
+              <path d="M120 22v14M112 36h16"/>
+              <circle class="lampara" cx="120" cy="44" r="5"/>
+              <text x="134" y="120" text-anchor="middle">4679</text>
+              <rect class="vidrio" x="26" y="104" width="62" height="68"/>
+              <path d="M57 104v68"/>
+            </svg>
+          </span>
+          <span class="puerta__nom">Saavedra</span>
+          <span class="puerta__dir">Crisólogo Larralde 4679</span>
+        </button>
+      </div>
+
+      <div class="sedes" data-r>
+        <div class="sede" id="sede-urquiza" role="tabpanel" aria-labelledby="tab-urquiza" data-sede-panel="urquiza">
+          <div class="sede__arriba">
+            <figure class="marco sede__foto"><img src="img/fotos/urquiza.webp" alt="Fachada de Porta Negra en Mendoza 5242" width="900" height="1125" loading="lazy" decoding="async"></figure>
+            <div class="pizarra">
+              <p class="pizarra__estado" data-estado="urquiza">Lunes a viernes</p>
+              <p class="pizarra__hs">Lunes a viernes<br>8:00 a 20:00 hs</p>
+              <p class="pizarra__hs">Findes y feriados<br>9:00 a 20:00 hs</p>
+            </div>
+          </div>
+          <div class="sede__info">
+            <h3 class="sede__nom">Mendoza 5242 · Villa Urquiza</h3>
+            <p class="sede__extra">La primera Porta. Pet friendly, con snacks para perros.</p>
+          </div>
+          <div class="sede__mapa">
+            <iframe title="Mapa de Porta Negra en Mendoza 5242" data-src="https://maps.google.com/maps?q=Mendoza%205242%2C%20Villa%20Urquiza%2C%20Buenos%20Aires&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="sede__btns">
+            <a class="btn btn--ambar" href="https://www.google.com/maps/dir/?api=1&amp;destination=Mendoza%205242%2C%20CABA" target="_blank" rel="noopener">Cómo llegar</a>
+            <button type="button" class="btn btn--linea" data-kit-sucursal="urquiza" data-kit-open="carrito">Encargar para retirar acá</button>
+          </div>
+        </div>
+        <div class="sede" id="sede-saavedra" role="tabpanel" aria-labelledby="tab-saavedra" data-sede-panel="saavedra" hidden>
+          <div class="sede__arriba">
+            <figure class="marco sede__foto"><img src="img/fotos/saavedra.webp" alt="Esquina de Porta Negra en Crisólogo Larralde 4679 con el cartel" width="480" height="800" loading="lazy" decoding="async"></figure>
+            <div class="pizarra">
+              <p class="pizarra__estado">Martes a domingo</p>
+              <p class="pizarra__hs">[Horario a confirmar]</p>
+              <p class="pizarra__hs">Lunes cerrado</p>
+            </div>
+          </div>
+          <div class="sede__info">
+            <h3 class="sede__nom">Crisólogo Larralde 4679 · Saavedra</h3>
+            <p class="sede__extra">La esquina del cartel negro, con terraza: acá pasan el yoga, el Coffee Club y las catas.</p>
+          </div>
+          <div class="sede__mapa">
+            <iframe title="Mapa de Porta Negra en Crisólogo Larralde 4679" data-src="https://maps.google.com/maps?q=Cris%C3%B3logo%20Larralde%204679%2C%20Saavedra%2C%20Buenos%20Aires&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="sede__btns">
+            <a class="btn btn--ambar" href="https://www.google.com/maps/dir/?api=1&amp;destination=Cris%C3%B3logo%20Larralde%204679%2C%20CABA" target="_blank" rel="noopener">Cómo llegar</a>
+            <button type="button" class="btn btn--linea" data-kit-sucursal="saavedra" data-kit-open="carrito">Encargar para retirar acá</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AGENDA ===== -->
+<section class="sec agenda-sec" id="agenda">
+  <div class="cont">
+    <header class="sec__cab sec__cab--fila" data-r>
+      <div>
+        <p class="rotulo">Agenda · en Porta Saavedra</p>
+        <h2 class="tit"><span class="lin"><span>Pasan cosas</span></span> <span class="lin"><span><em>detrás de la puerta.</em></span></span></h2>
+      </div>
+      <p class="sec__txt">Yoga en la terraza, Coffee Club con DJ y catas de vino. Anotate por WhatsApp y te guardamos el lugar.</p>
+    </header>
+    <div class="pizarron" data-r>
+      <article class="evento" style="--d:0">
+        <figure class="evento__foto"><img src="img/eventos/yoga.webp" alt="Placa de Rooftop yoga en Porta Negra Saavedra" width="700" height="875" loading="lazy" decoding="async"></figure>
+        <div class="evento__txt">
+          <h3 class="evento__nom">Rooftop yoga</h3>
+          <p class="evento__cuando" data-kit-destacado="yoga.cuando">Martes, jueves y sábados · 9:15 hs</p>
+          <p class="evento__det" data-kit-destacado="yoga.detalle">Con Pame de Fluir en Movimiento, en la terraza de Saavedra. Cupos limitados: traé tu mat.</p>
+        </div>
+        <a class="btn btn--ambar evento__btn" data-wa-evento="Rooftop yoga" href="#" target="_blank" rel="noopener">Anotarme por WhatsApp</a>
+      </article>
+      <article class="evento" style="--d:1">
+        <figure class="evento__foto"><img src="img/eventos/coffee-club.webp" alt="Placa del Powerhouse Coffee Club" width="700" height="1244" loading="lazy" decoding="async"></figure>
+        <div class="evento__txt">
+          <h3 class="evento__nom">Coffee Club</h3>
+          <p class="evento__cuando" data-kit-destacado="club.cuando">Sábado [fecha a confirmar] · 16:00 hs</p>
+          <p class="evento__det" data-kit-destacado="club.detalle">Con Powerhouse: café, charlas, buena música y DJ en vivo.</p>
+        </div>
+        <a class="btn btn--ambar evento__btn" data-wa-evento="Coffee Club" href="#" target="_blank" rel="noopener">Anotarme por WhatsApp</a>
+      </article>
+      <article class="evento" style="--d:2">
+        <figure class="evento__foto"><img src="img/eventos/alma-copa.webp" alt="Placa de Alma y Copa, La copa y el destino" width="700" height="933" loading="lazy" decoding="async"></figure>
+        <div class="evento__txt">
+          <h3 class="evento__nom">Alma &amp; Copa</h3>
+          <p class="evento__cuando" data-kit-destacado="copa.cuando">[Fecha a confirmar] · 19:00 hs</p>
+          <p class="evento__det" data-kit-destacado="copa.detalle">“La copa y el destino”: vinos boutique, juegos y astrología para bajar el ritmo.</p>
+        </div>
+        <a class="btn btn--ambar evento__btn" data-wa-evento="Alma &amp; Copa" href="#" target="_blank" rel="noopener">Anotarme por WhatsApp</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NUESTRO LUGAR ===== -->
+<section class="sec lugar-sec" id="lugar" data-lampara>
+  <span class="lugar__luz" aria-hidden="true"></span>
+  <div class="cont">
+    <header class="sec__cab sec__cab--fila" data-r>
+      <div>
+        <p class="rotulo">Nuestro lugar</p>
+        <h2 class="tit"><span class="lin"><span>Ladrillo, madera</span></span> <span class="lin"><span><em>y luz de lámpara.</em></span></span></h2>
+      </div>
+      <div class="lugar__datos">
+        <p class="google"><span class="google__estrellas" aria-hidden="true">★★★★★</span><span><b>4,8/5</b> en Google · 507 reseñas</span></p>
+        <p class="chip-pet">Pet friendly</p>
+      </div>
+    </header>
+    <div class="galeria" data-galeria>
+      <figure class="gal gal--a" data-r><img src="img/fotos/mesa-ventana.webp" alt="Croissant y café en una mesa junto a la ventana" width="720" height="960" loading="lazy" decoding="async"></figure>
+      <figure class="gal gal--b" data-r><img src="img/fotos/barra-vapor.webp" alt="La barra con la máquina de espresso y vapor" width="540" height="720" loading="lazy" decoding="async"></figure>
+      <figure class="gal gal--c" data-r><img src="img/fotos/clientes.webp" alt="Salón lleno un fin de semana" width="900" height="720" loading="lazy" decoding="async"></figure>
+      <figure class="gal gal--d" data-r><img src="img/fotos/extraccion.webp" alt="Extracción de espresso" width="480" height="640" loading="lazy" decoding="async"></figure>
+      <figure class="gal gal--e" data-r><img src="img/fotos/musica.webp" alt="Música en vivo en Porta Saavedra" width="720" height="960" loading="lazy" decoding="async"></figure>
+      <figure class="gal gal--f" data-r><img src="img/fotos/latte-taza.webp" alt="Latte art en taza blanca" width="900" height="1125" loading="lazy" decoding="async"></figure>
+      <figure class="gal gal--g" data-r><img src="img/fotos/salon.webp" alt="Salón de Saavedra con lámparas colgantes" width="648" height="405" loading="lazy" decoding="async"></figure>
+      <figure class="gal gal--h" data-r><img src="img/fotos/molino-mano.webp" alt="Molino de café en la barra" width="720" height="960" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="cont pie__grid">
+    <div class="pie__marca">
+      <img src="img/marca/logo-claro.svg" alt="Porta Negra café" width="625" height="771" loading="lazy">
+    </div>
+    <div class="pie__col">
+      <h3>Villa Urquiza</h3>
+      <p>Mendoza 5242<br>Lunes a viernes 8:00 a 20:00 hs<br>Findes y feriados 9:00 a 20:00 hs</p>
+    </div>
+    <div class="pie__col">
+      <h3>Saavedra</h3>
+      <p>Crisólogo Larralde 4679<br>Martes a domingo · [horario a confirmar]</p>
+    </div>
+    <div class="pie__col">
+      <h3>Seguinos</h3>
+      <p><a href="https://www.instagram.com/portanegracafe/" target="_blank" rel="noopener">@portanegracafe</a><br><a href="carta/" target="_blank" rel="noopener">Carta del QR</a><br><a href="admin/" target="_blank" rel="noopener">Panel del dueño</a></p>
+    </div>
+  </div>
+  <div class="cont pie__base">
+    <p>© 2026 Porta Negra Café · Café de especialidad</p>
+    <p class="pie__credito">Sitio desarrollado por <a href="https://alejomfernandez.com.ar" target="_blank" rel="noopener">Alejo Martín Fernández</a></p>
+  </div>
+</footer>
+
+<script type="module" src="js/main.js?v=1"></script>
+</body>
+</html>
